@@ -38,7 +38,7 @@
    <!-- about section --> 
    <section id="about">
      <div class ="inner" >
-         <div class="about-title">
+         <div class="title">
              <span class="title-b">About &nbsp;</span> US
          </div>
          <div class="about-wrap">
@@ -88,8 +88,45 @@
    </section>
    <!-- news section -->
    <section id="news">
+       <div class ="inner">
+          <h2 class="title white-title">
+              <span class="title-b ">News</span>
+          </h2>
+           <div class="news-wrap">
+                <div class="news-item">
+                    <div class="news-img">
+                        <img src="img/news1.jpg">
+                    </div>
+                    <div class="news-content">
+                        <p class="news-date">2019/7/21</p>
+                        <p class="news-title">タイトルが入ります。タイトルが入ります。</p>
+                        <p class="news-txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-img">
+                        <img src="img/news2.jpg">
+                    </div>
+                    <div class="news-content">
+                        <p class="news-date">2019/7/21</p>
+                        <p class="news-title">タイトルが入ります。タイトルが入ります。</p>
+                        <p class="news-txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    </div>
+                </div>   
+                <div class="news-item">
+                    <div class="news-img">
+                        <img src="img/news3.jpg">
+                    </div>
+                    <div class="news-content">
+                        <p class="news-date">2019/7/21</p>
+                        <p class="news-title">タイトルが入ります。タイトルが入ります。</p>
+                        <p class="news-txt">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    </div>
+                 </div>   
+           </div>        
+         </div>
+   </section>
 
-  </section>
   <!-- entry section -->
   <section id="entry">
     <div class="entry-wrap">
@@ -99,8 +136,37 @@
       </button>
     </div>
   </section>
-
+<!--contact section-->
    <section id="contact">
+       <div class="inner">
+           <h2 class="title">
+               <span class="title-b">Contact</span>
+           </h2>
+           <div class="contact-wrap">
+               <p class="contact-caution"><span class="red caution-red">*</span> が付いたフィールドは必須項目です。</p>
+               <div class="contact-box">
+                     <p class="contact-text">名前<span class="red">*</span></p><input type="text" name ="contact-name" placearea ="名前をご記入ください">
+
+               </div>
+               <div class="contact-box">
+                     <p class="contact-text">メールアドレス<span class="red">*</span></p>
+                     <input type="email" name="contact-mail" placearea="メールアドレスをご記入ください">
+                     
+               </div>
+               <div class="contact-box">
+                     <p class="contact-text">お問い合わせ内容<span class="red">*</span></p>
+                     <select name="contact-select">
+                           <option value="service">サービスに関するお問い合わせ</option>
+                           <option value="recrurt">採用に関するお問い合わせ</option>
+                           <option value="other">その他のお問い合わせ</option>
+                     </select>
+                     
+               </div>
+               <div class="contact-box">
+                     <p class="contact-text">お問い合わせ詳細<span class="red">*</span></p>
+                     <textarea name="contact-text" placeholder="お問い合わせ内容の詳細をご記入ください"></textarea>
+           </div>
+       </div>
 
    </section>
 </main>
