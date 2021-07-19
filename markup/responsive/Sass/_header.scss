@@ -1,0 +1,29 @@
+header {
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    padding: 20px;
+    color: #FFF;
+    position:absolute;
+    z-index:20;
+    
+    .hd-logo{
+        font-weight:bold;
+        font-size:1.8rem;
+    }
+
+    nav{
+        width:45%;
+
+        ul{
+            font-size: 1.5rem;
+            display:flex;
+            justify-content:space-between;
+        }
+
+    }
+}
+.ham {
+    display:none;
+}
+
