@@ -18,6 +18,13 @@
     left: 50%;
     transform:translate(-50%,-50%);
     text-align: center;
+
+    @include sp{
+        height:50%;
+        width:40%;
+        transform:translate(-40%,0);
+        //top:65%;
+    }
 }
 
 .catch{

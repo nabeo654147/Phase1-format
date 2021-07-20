@@ -15,12 +15,30 @@
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include tab{
+        flex-direction: column;
+    }
 }
  .news-item{
     //336(item横幅)/1100(inner横幅)=30.5% 
      width:30.5%;
      
+    @include tab{
+        width:80%;
+        margin:0 auto 30px ;
+    }
 
+    @include sp{
+        width: 100%;
+    }
+
+    &:nth-child(3){
+        @include tab{
+            margin-bottom: 0;
+
+    }
+    }
  }
 
 .news__img {

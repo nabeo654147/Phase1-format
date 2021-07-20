@@ -8,6 +8,24 @@ body{
     line-height: 67;
 }*/
 
+@mixin pc{
+    @media (min-width:1025px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (max-width:1024px){
+        @content;
+    }
+}
+
+@mixin sp {
+    @media (max-width:599px){
+        @content;
+    }
+}
+
 $sky: #06BEB6;
 $navy: #283C86;
 
@@ -15,6 +33,14 @@ $navy: #283C86;
     width:80%;
     margin:0 auto;
     padding:90px;
+
+    @include tab{
+        padding:50px 0;
+        width:90%;
+
+    }
+
+
 }
 
 .title{
@@ -24,6 +50,10 @@ $navy: #283C86;
     font-size: 1.8rem;
     font-style: italic;
     margin-bottom:60px;
+
+    @include tab{
+        margin-bottom:40px;
+    }
 
     &--b{
         font-weight:bold;
