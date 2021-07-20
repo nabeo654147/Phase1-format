@@ -1,7 +1,18 @@
 {
-"version": 3,
-"mappings": "",
-"sources": [],
-"names": [],
-"file": "main.css"
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../Sass/main.scss",
+        "../Sass/_reset.scss",
+        "../Sass/_lib.scss",
+        "../Sass/_header.scss",
+        "../Sass/_first-v.scss",
+        "../Sass/_menu.scss",
+        "../Sass/_concept.scss",
+        "../Sass/_access.scss",
+        "../Sass/_reserve.scss",
+        "../Sass/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
 }
