@@ -1,0 +1,90 @@
+#contact{
+    background-image: url(/img/bg3.png);
+    background-size: cover;
+    color: #FFF;
+    font-size: 1.5rem;
+
+
+    .title{
+        color:#FFF;
+    
+    &::after ,&::before{
+        border-color: #FFF;
+    }    
+    }
+}
+
+.contact-wrap{
+    width:600px;
+    max-width:600px;
+    margin:0 auto;
+    
+}
+
+input,select,textarea{
+    width:100%;
+    border-radius: 7px;
+    padding:15px;
+    //font-size: 1.5rem;
+}
+
+input,select{
+    height:55px;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea{
+    height:185px;
+}
+
+.contact-text{
+    margin-bottom: 10px;
+}
+    
+
+.contact-caution{
+    padding-bottom:25px;
+
+}
+
+.contact-box{
+    width: 100%;
+    margin-bottom:33px;
+
+    &:nth-of-type(3){
+        position:relative;
+
+        &::after{
+        background-image:url(/img/arrow.png);
+        background-size: 100%;
+        position: absolute;
+        content:"";
+        display:block;
+        top:60%;
+        right:15px;
+        width:15px;
+        height:15px;
+        }
+   
+    }
+
+    &:nth-of-type(4){
+        margin-bottom: 0;
+    }
+}
+
+.red{
+    color:red;
+    margin-left:8px;
+}
+
+.caution-red{
+    margin-left:0;
+    margin-right:8px;
+}
+
