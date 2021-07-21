@@ -1,0 +1,67 @@
+#menu {
+    width:100%;
+    height: 590px;
+}
+
+.inner {
+    margin: 261px auto 70px;
+
+}
+
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin:0 107px;
+}
+
+.menu-title {
+    width: 1074px;
+    font-size: 1.8rem;
+    color:#707070;
+    text-align: left;
+    position: relative;
+    margin: 0 107px;
+
+    &::after {
+        display:inline-block;
+        width: 10rem;
+        content:"";
+        border-top:1px solid #707070;
+        margin-left:2rem;
+        position: absolute;
+        top:50%;
+    }
+}
+
+
+.menu-itme {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 274px;
+    height: 555px;
+}
+
+.menu-content {
+
+
+    &__title {
+        font-size: 3rem;
+        margin:37px auto 34px;
+        text-align: center;
+    }
+
+    &__text {
+        width: 253px;
+        font-size: 1.6rem;
+        font-family:'Roboto Mono for Powerline';
+        margin:0 auto 34px;
+    }
+
+    &__price {
+        text-align: right;
+        font-size: 1.6rem;
+    }
+
+}

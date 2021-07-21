@@ -1,0 +1,45 @@
+footer{
+    height: 170px;
+
+    & div p {
+        font-size: 3.2rem;
+        color: #7070704D;
+
+        & i {
+            color: black;
+
+        }
+    }
+}
+
+.border-f {
+    width: 1066px;
+    height: 170px;
+    border-top: 1px solid #7070704D;
+    margin: 170px auto 0 ;
+}
+
+.fab fa-twitter {
+    margin:0 9px 0 26px;
+}
+
+.footer-wrap {
+    width: 1066px;
+    height: 37px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+    margin:60px auto;
+
+}
+
+.reserve {
+    width: 184px;
+    height: 37px;
+    padding:10px 41px;
+    font-size: 1.8rem;
+    color: #707070;
+    border: 1px solid #707070;
+}

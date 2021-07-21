@@ -1,0 +1,33 @@
+header {
+     width: 100%;
+     display: flex;
+     justify-content:start;
+     text-align: center;
+     z-index: 10;
+     position: absolute;
+     top:0px;
+
+     .hd-logo {
+         width: 306px;
+         font-size: 3.8rem;
+         color: #000000;
+         margin: 68px 0 0 77px ;
+     }
+}
+
+ul {
+    width: 381px; //仮の長さ334px;
+    display: flex;
+    justify-content: space-around;
+    margin:77px 20px 20px;
+    font-size: 1.8rem;
+}
+
+li:nth-of-type(1) {
+        color:#000000;
+        border-bottom:1px solid #000000 ;
+    }
+
+li:nth-of-type(n+2){
+        color: #707070;
+    }
