@@ -3,7 +3,7 @@
     height: 1000px;
     background:linear-gradient(to bottom,#A193861F 0% ,#A193861F 40% ,#A1938689 40%, #A1938689 100%);
     
-    @include sp {
+    @include tab {
         height: unset;
 
     }
@@ -17,7 +17,7 @@
     position: relative;
     margin: 0 auto 11px;
 
-    @include sp {
+    @include tab {
         padding: 50px 0 50px 10px;
         width: 50%;
         margin: unset;
@@ -50,12 +50,17 @@
     height:413px; 
     margin-right: 15px;
 
-    @include sp {
+    @include tab {
         height: unset;
         margin: unset;
     }
 
     & img {
+
+         @include tab {
+        width: unset;
+        height:250px;
+    }
 
         @include sp {
             width: 164px;
@@ -76,7 +81,7 @@
     margin: 0 auto;
     flex-wrap: nowrap;
 
-    @include sp {
+    @include tab {
         width: unset;
         height: unset;
         display: unset;
@@ -88,6 +93,11 @@
         font-size: 4rem;
         font-family:'ヒラギノ明朝 Pro';
         margin-top: 92px;
+
+        @include tab {
+            font-size:5rem ;
+            margin-left: 50px;
+        }
 
         @include sp {
             width: unset;
@@ -104,6 +114,12 @@
         height:100%;
         margin-top: 69px;
         font-size: 1.6rem;
+
+        
+        @include tab {
+            font-size:3rem ;
+             margin-left: 50px;
+        }
 
         @include sp {
             width: unset;

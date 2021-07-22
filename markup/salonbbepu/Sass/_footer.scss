@@ -18,13 +18,18 @@ footer{
     border-top: 1px solid #7070704D;
     margin: 170px auto 0 ;
 
-    @include sp {
+    @include tab {
         width: 80%;
         margin-top: 60px;
     }
 }
 
 .fa-twitter {
+
+    @include tab {
+        padding-left: 400px;
+    }
+
 
     @include sp {
         padding-left: 120px;
@@ -43,7 +48,7 @@ footer{
     text-align: center;
     margin:60px auto;
 
-    @include sp {
+    @include tab {
         flex-direction: column;
         width: 100%;
         height: 117px;
@@ -52,7 +57,7 @@ footer{
 }
 
 .footer-title {
-    @include sp {
+    @include tab {
         width: 100%;
         font-size: 1.8rem;
         display: flex;
