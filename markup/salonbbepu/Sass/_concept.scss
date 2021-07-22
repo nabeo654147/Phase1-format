@@ -2,6 +2,11 @@
     width: 100%;
     height: 1000px;
     background:linear-gradient(to bottom,#A193861F 0% ,#A193861F 40% ,#A1938689 40%, #A1938689 100%);
+    
+    @include sp {
+        height: unset;
+
+    }
 }
 
 .concept-title {
@@ -10,7 +15,14 @@
     color:#707070;
     text-align: left;
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 11px;
+
+    @include sp {
+        padding: 50px 0 50px 10px;
+        width: 50%;
+        margin: unset;
+
+    }
 
     &::after {
         display:inline-block;
@@ -26,12 +38,32 @@
 .concept-inner {
     padding:256px 0 64px;
     text-align: center;
+
+    @include sp{
+        padding: unset;
+        
+    }
 }
 
 .concept-img {
     width: 100%;
     height:413px; 
     margin-right: 15px;
+
+    @include sp {
+        height: unset;
+        margin: unset;
+    }
+
+    & img {
+
+        @include sp {
+            width: 164px;
+            height: 205px;
+       }
+        
+
+    }
 }
 
 .concept-content {
@@ -42,6 +74,13 @@
     color: #FFF;
     text-align: center;
     margin: 0 auto;
+    flex-wrap: nowrap;
+
+    @include sp {
+        width: unset;
+        height: unset;
+        display: unset;
+    }
 
     &__title{
         width: 445px;
@@ -49,6 +88,15 @@
         font-size: 4rem;
         font-family:'ヒラギノ明朝 Pro';
         margin-top: 92px;
+
+        @include sp {
+            width: unset;
+            height: unset;
+            font-size: 1.8rem;
+            margin: 50px 0 18px;
+            font-family: 'ヒラギノ角ゴ Pro';
+            letter-spacing: 1.6px;
+        }
     }
 
     &__text {
@@ -56,5 +104,15 @@
         height:100%;
         margin-top: 69px;
         font-size: 1.6rem;
+
+        @include sp {
+            width: unset;
+            margin: unset;
+            height: 211px;
+            padding: 0 21px;
+
+
+
+        }
     }
 }

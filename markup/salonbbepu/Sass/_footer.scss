@@ -17,11 +17,21 @@ footer{
     height: 170px;
     border-top: 1px solid #7070704D;
     margin: 170px auto 0 ;
+
+    @include sp {
+        width: 80%;
+        margin-top: 60px;
+    }
 }
 
-.fab fa-twitter {
-    margin:0 9px 0 26px;
+.fa-twitter {
+
+    @include sp {
+        padding-left: 120px;
+    }
 }
+
+
 
 .footer-wrap {
     width: 1066px;
@@ -33,6 +43,23 @@ footer{
     text-align: center;
     margin:60px auto;
 
+    @include sp {
+        flex-direction: column;
+        width: 100%;
+        height: 117px;
+    }
+
+}
+
+.footer-title {
+    @include sp {
+        width: 100%;
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+    }
 }
 
 .reserve {

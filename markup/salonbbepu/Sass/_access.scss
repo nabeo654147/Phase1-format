@@ -3,6 +3,11 @@
     width:100%;
     height:757px;
     padding:291px 0 70px;
+
+    @include sp {
+        padding: unset;
+        height: 700px;
+    }
 }
 
 .access-inner {
@@ -12,12 +17,18 @@
 }
 
 .access-title {
-    @extend .menu-title;
 
+
+    @extend .menu-title;
     &__name {
-        font-size:2.4rem;
-        color:#00000038;
-        margin-bottom: 30px;
+       font-size:2.4rem;
+       color:#00000038;
+       margin-bottom: 30px;
+    }
+
+    @include sp {
+        padding:60px 0 50px;
+        margin-bottom: 0px;
     }
 }
 
@@ -27,11 +38,21 @@
     flex-direction: row-reverse;
     height: 396px;
     background-color: #D0C5BA;
+
+    @include sp {
+        flex-direction: column;
+        height: unset;
+    }
     
 }
 .access-img img{
     width: 775px;
     height:396px;
+
+    @include sp {
+        width: 100%;
+        height: 231px;
+    }
 }
 
 .access-item {
@@ -42,8 +63,11 @@
     height: 192px;
     font-size: 1.6rem;
     color:#FFF;
-    //margin:90px 110px 90px 60px;
     margin:100px;
+
+    @include sp {
+        margin: 30px 0 60px 20px;
+    }
 }
     
 .access-ul {

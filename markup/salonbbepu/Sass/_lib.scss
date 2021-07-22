@@ -1,3 +1,23 @@
 html{
     font-size:62.5%;
 }
+
+@mixin pc {
+    @media (min-width:1025px){
+        @content;
+    }
+}
+
+// タブレット画面
+@mixin tab {
+    @media (max-width:1024px){
+        @content;
+    }
+}
+
+// スマホ画面
+@mixin sp {
+    @media (max-width:599px){
+        @content;
+    }
+}

@@ -13,22 +13,28 @@
 <body>
     <!-- header -->
     <header>
-        <!-- ハンバーガーメニュー
-        <div class="ham">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>-->
+        <!-- ハンバーガーメニュ-->
+        <input type="checkbox" id="ham">
+        <label for="ham" class="open">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </label>
+        <label for="ham" class="back"></label>
 
-        <div class="hd-logo">SALON BEPPU</div>
-        <nav class="nav-menu">
-            <ul>
-                <li>MENU</li>
-                <li>CONCEPT</li>
-                <li>ACCESS</li>
-                <li>RESERVE</li>
-            </ul>
-        </nav>
+        <h1 class="hd-logo">SALON BEPPU</h1>
+
+        <aside>
+            <label for="ham" class="close">x</label>
+            <nav class="nav-menu">
+                <ul>
+                    <li>MENU</li>
+                    <li>CONCEPT</li>
+                    <li>ACCESS</li>
+                    <li>RESERVE</li>
+                </ul>
+            </nav>
+        </aside>
     </header>
 
     <main>
@@ -136,13 +142,6 @@
             </div>
 
         </section>
-
-        <!-- いらない？ -->
-        <!-- reserve 
-        <section id="reserve">
-            <div class="reserve-title">RESERVE</div>
-        </section>
-        -->
     </main>
 
     <!-- footer -->
@@ -150,7 +149,7 @@
         <div class="border-f">
             <div class="footer-wrap">
                 <div class="reserve">RESERVE</div>
-                <p>SALON BEPPU
+                <p class="footer-title">SALON BEPPU
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-facebook-square"></i>
                 </p>
