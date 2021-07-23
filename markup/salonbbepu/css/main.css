@@ -91,7 +91,8 @@ input, select {
 
 /*# sourceMappingURL=reset.css.map */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 header {
   width: 100%;
@@ -142,7 +143,7 @@ aside {
 
 input[type="checkbox"] {
   position: absolute;
-  left: 105%; }
+  left: 150%; }
   input[type="checkbox"]:checked ~ aside {
     right: 0; }
   input[type="checkbox"]:checked ~ .back {
@@ -172,20 +173,35 @@ ul {
   display: flex;
   justify-content: space-around;
   margin: 77px 20px 20px;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  transition: all 0.2s 0s ease; }
   @media (max-width: 1024px) {
     ul {
       width: unset;
       display: unset; } }
 
-li:nth-of-type(1) {
-  color: #000000;
-  border-bottom: 1px solid #000000; }
-li:nth-of-type(n+2) {
-  color: #707070; }
-@media (max-width: 1024px) {
-  li {
-    margin-bottom: 10px; } }
+li {
+  position: relative;
+  color: #707070;
+  text-decoration: none; }
+  li:hover {
+    color: #000000; }
+  li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #000000;
+    transition: all 0.3s;
+    transform: scale(0, 1);
+    transform-origin: left top; }
+  li:hover::after {
+    transform: scale(1, 1); }
+  @media (max-width: 1024px) {
+    li {
+      margin-bottom: 10px; } }
 
 body {
   margin: 0px;
