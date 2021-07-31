@@ -15,16 +15,21 @@ p {
 
 /*  チャレンジ問題 */
 
-/* .slot-wrap {
-  height: 180px;
+.slot-wrap {
+  height: 160px;
 }
 
 .slot {
   height: 40px;
 }
 
-.middle-slot p{
-  background-color: rgb(37, 233, 168);
-} */
+p{
+  margin: 0;
+}
 
+.middle-slot{
+  background-color: rgb(37, 233, 168);
+  width: 200px;
+  margin: 0 auto;
+} 
 /*  チャレンジ問題  ここまで */
