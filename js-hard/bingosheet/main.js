@@ -46,6 +46,8 @@ function set() {
 //表示する
 const columns = set();
 sheet(columns);
+
+//追加問題
 const allNum = columns.flat();
 const numIndex = allNum.flat();
 document.getElementById('free').setAttribute('class', 'hit-num');
@@ -91,6 +93,7 @@ startBtn.addEventListener('click', function () {
             let target = Math.floor(Math.random() * roulette.length);
             open.textContent = roulette[target];
         }, 100)
+        //ストップボタンを押した時
     } else {
         startBtn.textContent = 'スタート';
         clearInterval(timer);

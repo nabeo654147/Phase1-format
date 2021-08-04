@@ -28,3 +28,13 @@ panel {
   opacity: 0;
   cursor: default;
 }
+
+#panel {
+  width: 300px;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
